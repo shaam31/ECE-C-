@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Student Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #333;
+      margin: 20px;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
+    .student {
+      background-color: red;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.6s ease, transform 0.3s ease;
+    }
+    .student.lightblue {
+      background-color: #00CED1;
+    }
+    .student.green {
+      background-color: green;
+    }
+    .student.glowing {
+      background-color: gold;
+      box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.8);
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px 2px rgba(255, 215, 0, 0.8);
+      }
+      100% {
+        box-shadow: 0 0 15px 5px rgba(255, 215, 0, 1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Interactive Student Dashboard</h1>
+  <div class="dashboard">
+    <div class="student" id="student1" onclick="changeColor(this)">RAJASREE M</div>
+    <div class="student" id="student2" onclick="changeColor(this)">RAKESH R</div>
+    <div class="student" id="student3" onclick="changeColor(this)">RAMYA R</div>
+    <div class="student" id="student4" onclick="changeColor(this)">RITHIK VARSHAN A R</div>
+    <div class="student" id="student5" onclick="changeColor(this)">ROOBAK S</div>
+    <div class="student" id="student6" onclick="changeColor(this)">RUPESH NAWIN S</div>
+    <div class="student" id="student7" onclick="changeColor(this)">SABAREESHWARAN B</div>
+    <div class="student" id="student8" onclick="changeColor(this)">SAI NITHIN R</div>
+    <div class="student" id="student9" onclick="changeColor(this)">SAI PRATHEEP D</div>
+    <div class="student" id="student10" onclick="changeColor(this)">SAKTHI S M</div>
+    <div class="student" id="student11" onclick="changeColor(this)">SAKTHI VARADARAJ S</div>
+    <div class="student" id="student12" onclick="changeColor(this)">SAMRUTHA S D</div>
+    <div class="student" id="student13" onclick="changeColor(this)">SANDHIYA A</div>
+    <div class="student" id="student14" onclick="changeColor(this)">SANJANA JENNIE R</div>
+    <div class="student" id="student15" onclick="changeColor(this)">SANJAY KUMAR S</div>
+    <div class="student" id="student16" onclick="changeColor(this)">SANJAYSURYA P S</div>
+    <div class="student" id="student17" onclick="changeColor(this)">SANJITH S</div>
+    <div class="student" id="student18" onclick="changeColor(this)">SANTHIYA K</div>
+    <div class="student" id="student19" onclick="changeColor(this)">SANTHOS M</div>
+    <div class="student" id="student20" onclick="changeColor(this)">SARAJWANTH M</div>
+    <div class="student" id="student21" onclick="changeColor(this)">SARNIKA G A</div>
+    <div class="student" id="student22" onclick="changeColor(this)">SARNITHA B</div>
+    <div class="student" id="student23" onclick="changeColor(this)">SASHRIKA T S</div>
+    <div class="student" id="student24" onclick="changeColor(this)">SASMITHA T</div>
+    <div class="student" id="student25" onclick="changeColor(this)">SHAJID M</div>
+    <div class="student" id="student26" onclick="changeColor(this)">SHARMITHAA A</div>
+    <div class="student" id="student27" onclick="changeColor(this)">SHARUK SULTHAN M</div>
+    <div class="student" id="student28" onclick="changeColor(this)">SHAZIA FAHMEEDA S</div>
+    <div class="student" id="student29" onclick="changeColor(this)">SHREYA R</div>
+    <div class="student" id="student30" onclick="changeColor(this)">SOWBARNIKA M</div>
+    <div class="student" id="student31" onclick="changeColor(this)">SRIDHAR E</div>
+    <div class="student" id="student32" onclick="changeColor(this)">SRIDHARAN S</div>
+    <div class="student" id="student33" onclick="changeColor(this)">SRIKARTHICK J C</div>
+    <div class="student" id="student34" onclick="changeColor(this)">SRIKAVINESH M</div>
+    <div class="student" id="student35" onclick="changeColor(this)">SRIRAM K</div>
+    <div class="student" id="student36" onclick="changeColor(this)">SUBANESH S</div>
+    <div class="student" id="student37" onclick="changeColor(this)">SUBHAM KUMAR BEHERA</div>
+    <div class="student" id="student38" onclick="changeColor(this)">SUDEEP KRISHNA V</div>
+    <div class="student" id="student39" onclick="changeColor(this)">SUDHARSAN S</div>
+    <div class="student" id="student40" onclick="changeColor(this)">SUDHARSANA R</div>
+    <div class="student" id="student41" onclick="changeColor(this)">SUJAN G H</div>
+    <div class="student" id="student42" onclick="changeColor(this)">SUNDARA KANNAN S</div>
+    <div class="student" id="student43" onclick="changeColor(this)">SURYA J</div>
+    <div class="student" id="student44" onclick="changeColor(this)">SURYA PRASATH S</div>
+    <div class="student" id="student45" onclick="changeColor(this)">TANIISH SUGUMAR</div>
+    <div class="student" id="student46" onclick="changeColor(this)">TEJASHRI A</div>
+    <div class="student" id="student47" onclick="changeColor(this)">THANUSH E</div>
+    <div class="student" id="student48" onclick="changeColor(this)">THIRANESH M</div>
+    <div class="student" id="student49" onclick="changeColor(this)">THRISHNA M</div>
+    <div class="student" id="student50" onclick="changeColor(this)">VAISHNAVI S</div>
+    <div class="student" id="student51" onclick="changeColor(this)">VAITHILINGAM S</div>
+    <div class="student" id="student52" onclick="changeColor(this)">VARSHINI M</div>
+    <div class="student" id="student53" onclick="changeColor(this)">VASANTHRAJ S</div>
+    <div class="student" id="student54" onclick="changeColor(this)">VEERAMANI K</div>
+    <div class="student" id="student55" onclick="changeColor(this)">VETHAVARSHINI K</div>
+    <div class="student" id="student56" onclick="changeColor(this)">VETRI S B</div>
+    <div class="student" id="student57" onclick="changeColor(this)">VIGNESH M</div>
+    <div class="student" id="student58" onclick="changeColor(this)">VIGNESHWARI N</div>
+    <div class="student" id="student59" onclick="changeColor(this)">VIRASHAKTHI R</div>
+  </div>
+
+  <script>
+    function changeColor(student) {
+      // Sequence: red -> lightblue -> green -> golden yellow -> red
+      if (student.classList.contains("red")) {
+        student.classList.remove("red");
+        student.classList.add("lightblue");
+      } else if (student.classList.contains("lightblue")) {
+        student.classList.remove("lightblue");
+        student.classList.add("green");
+      } else if (student.classList.contains("green")) {
+        student.classList.remove("green");
+        student.classList.add("glowing");
+      } else if (student.classList.contains("glowing")) {
+        student.classList.remove("glowing");
+        student.classList.add("red");
+      } else {
+        student.classList.add("red");
+      }
+    }
+  </script>
+</body>
+</html>
